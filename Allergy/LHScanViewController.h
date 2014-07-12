@@ -10,12 +10,13 @@
 #import "ZBarSDK.h"
 
 @interface LHScanViewController : UIViewController <ZBarReaderDelegate>{
-    UIImageView *resultImage;
     UITextView *resultText;
 }
-
-@property (nonatomic, retain) UIImageView *resultImage;
+// NSURLConnectionDownloadDelegate
 @property (nonatomic, retain) UITextView *resultText;
+@property (nonatomic, strong) NSString *barcode;
 @property (nonatomic, strong) UIButton *scanButton;
 
+@property (nonatomic, strong) NSMutableData *responseData;
+@property (nonatomic, strong) NSArray *usersAllergen;
 @end

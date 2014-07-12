@@ -9,34 +9,78 @@
 #import "LHMainViewController.h"
 
 @interface LHMainViewController ()
-
 @end
 
-@implementation LHMainViewController
+static void *setupCompleteContext = &setupCompleteContext;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation LHMainViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    LHScanViewController *cameraViewController = [[LHScanViewController alloc]init];
-    //  cameraViewController.delegate = self;
+
+    //TODO: pull user allergen
+    if (self.userAllergen) {
+    //    self.userAllergen = @[@"Cereals", @"Shellfish"];//hard-coded user info
+   
+        LHScanViewController *cameraViewController = [[LHScanViewController alloc] init];
+        //  cameraViewController.delegate = self;
+        cameraViewController.usersAllergen = self.userAllergen;//we should pull from database
+        [cameraViewController.tabBarItem setImage:[UIImage imageNamed:@"camera.png"]];
+        [cameraViewController.tabBarItem setTitle:@"CAMERA"];
     
-    [cameraViewController.tabBarItem setTitle:@"CAMERA"];
-    
-    UIViewController *listViewController = [[UIViewController alloc]init];
-    [listViewController.tabBarItem setTitle:@"LIST"];
-    [self setViewControllers:@[cameraViewController, listViewController] animated:YES];
+        LHTableViewController *listViewController = [[LHTableViewController alloc]init];
+        [listViewController.tabBarItem setTitle:@"LIST"];
+        listViewController.userAllergen = self.userAllergen;
+        [self setViewControllers:@[cameraViewController, listViewController] animated:YES];
+    } else {
+        LHSetupViewController *setupViewController = [[LHSetupViewController alloc] init];
+
+        [[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:127.0/255.0 green:186.0/255.0 blue:235.0/255.0 alpha:0.5]];
+        [setupViewController.tabBarItem setTitle:@"SETUP"];
+        
+        [setupViewController addObserver:self forKeyPath:@"done" options:NSKeyValueObservingOptionNew context:setupCompleteContext];
+
+        /*
+        LHScanViewController *cameraViewController = [[LHScanViewController alloc] init];
+        //  cameraViewController.delegate = self;
+        cameraViewController.usersAllergen = self.userAllergen;//we should pull from database
+        [cameraViewController.tabBarItem setImage:[UIImage imageNamed:@"camera.png"]];
+        [cameraViewController.tabBarItem setTitle:@"CAMERA"];
+        
+        LHTableViewController *listViewController = [[LHTableViewController alloc]init];
+        [listViewController.tabBarItem setTitle:@"LIST"];
+        
+        listViewController.userAllergen = self.userAllergen;
+        [self setViewControllers:@[cameraViewController, setupViewController,listViewController] animated:YES];*/
+        
+        [self setViewControllers:@[setupViewController]];
+        
+
+        
+    }
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (context != setupCompleteContext) {
+        return;
+    }
+    NSString *newValue = [change valueForKey:NSKeyValueChangeNewKey];
+    if ([newValue boolValue] == YES) {
+        LHScanViewController *cameraViewController = [[LHScanViewController alloc] init];
+        //  cameraViewController.delegate = self;
+        cameraViewController.usersAllergen = self.userAllergen;//we should pull from database
+        [cameraViewController.tabBarItem setImage:[UIImage imageNamed:@"camera.png"]];
+        [cameraViewController.tabBarItem setTitle:@"CAMERA"];
+        
+        LHTableViewController *listViewController = [[LHTableViewController alloc]init];
+        [listViewController.tabBarItem setTitle:@"LIST"];
+        listViewController.userAllergen = self.userAllergen;
+        [self setViewControllers:@[cameraViewController, listViewController] animated:YES];
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

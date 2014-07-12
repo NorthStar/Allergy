@@ -38,6 +38,24 @@
 		92F81D3C197114FA00E88C8A /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D37197114FA00E88C8A /* zbar-help.html */; };
 		92F81D3D197114FA00E88C8A /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D38197114FA00E88C8A /* zbar-helpicons.png */; };
 		92F81D3E197114FA00E88C8A /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D39197114FA00E88C8A /* zbar-samples.png */; };
+		92F81D411971403000E88C8A /* LHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F81D401971403000E88C8A /* LHTableViewController.m */; };
+		92F81D4519714D0400E88C8A /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D4419714D0400E88C8A /* camera.png */; };
+		92F81D4B19715AF900E88C8A /* LHSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F81D4A19715AF900E88C8A /* LHSetupViewController.m */; };
+		92F81D521971705100E88C8A /* Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D501971705100E88C8A /* Check.png */; };
+		92F81D531971705100E88C8A /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D511971705100E88C8A /* Cross.png */; };
+		92F81D6219717FFC00E88C8A /* Cereal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5419717FFC00E88C8A /* Cereal.jpg */; };
+		92F81D6319717FFC00E88C8A /* Corn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5519717FFC00E88C8A /* Corn.jpg */; };
+		92F81D6419717FFC00E88C8A /* Egg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5619717FFC00E88C8A /* Egg.jpg */; };
+		92F81D6519717FFC00E88C8A /* Fish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5719717FFC00E88C8A /* Fish.jpg */; };
+		92F81D6619717FFC00E88C8A /* Gluten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5819717FFC00E88C8A /* Gluten.jpg */; };
+		92F81D6719717FFC00E88C8A /* Lactose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5919717FFC00E88C8A /* Lactose.jpg */; };
+		92F81D6819717FFC00E88C8A /* Milk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5A19717FFC00E88C8A /* Milk.jpg */; };
+		92F81D6919717FFC00E88C8A /* Peanut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5B19717FFC00E88C8A /* Peanut.jpg */; };
+		92F81D6A19717FFC00E88C8A /* Sesame Seed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5C19717FFC00E88C8A /* Sesame Seed.jpg */; };
+		92F81D6B19717FFC00E88C8A /* Shellfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5D19717FFC00E88C8A /* Shellfish.jpg */; };
+		92F81D6C19717FFC00E88C8A /* Soybean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5E19717FFC00E88C8A /* Soybean.jpg */; };
+		92F81D6D19717FFC00E88C8A /* Sulfite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5F19717FFC00E88C8A /* Sulfite.jpg */; };
+		92F81D6F19717FFC00E88C8A /* Wheat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D6119717FFC00E88C8A /* Wheat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +126,26 @@
 		92F81D37197114FA00E88C8A /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
 		92F81D38197114FA00E88C8A /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
 		92F81D39197114FA00E88C8A /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+		92F81D3F1971403000E88C8A /* LHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTableViewController.h; sourceTree = "<group>"; };
+		92F81D401971403000E88C8A /* LHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHTableViewController.m; sourceTree = "<group>"; };
+		92F81D4419714D0400E88C8A /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camera.png; path = Allergy/camera.png; sourceTree = "<group>"; };
+		92F81D4919715AF900E88C8A /* LHSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSetupViewController.h; sourceTree = "<group>"; };
+		92F81D4A19715AF900E88C8A /* LHSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSetupViewController.m; sourceTree = "<group>"; };
+		92F81D501971705100E88C8A /* Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Check.png; sourceTree = "<group>"; };
+		92F81D511971705100E88C8A /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
+		92F81D5419717FFC00E88C8A /* Cereal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cereal.jpg; sourceTree = "<group>"; };
+		92F81D5519717FFC00E88C8A /* Corn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Corn.jpg; sourceTree = "<group>"; };
+		92F81D5619717FFC00E88C8A /* Egg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Egg.jpg; sourceTree = "<group>"; };
+		92F81D5719717FFC00E88C8A /* Fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fish.jpg; sourceTree = "<group>"; };
+		92F81D5819717FFC00E88C8A /* Gluten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gluten.jpg; sourceTree = "<group>"; };
+		92F81D5919717FFC00E88C8A /* Lactose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lactose.jpg; sourceTree = "<group>"; };
+		92F81D5A19717FFC00E88C8A /* Milk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Milk.jpg; sourceTree = "<group>"; };
+		92F81D5B19717FFC00E88C8A /* Peanut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Peanut.jpg; sourceTree = "<group>"; };
+		92F81D5C19717FFC00E88C8A /* Sesame Seed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sesame Seed.jpg"; sourceTree = "<group>"; };
+		92F81D5D19717FFC00E88C8A /* Shellfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shellfish.jpg; sourceTree = "<group>"; };
+		92F81D5E19717FFC00E88C8A /* Soybean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soybean.jpg; sourceTree = "<group>"; };
+		92F81D5F19717FFC00E88C8A /* Sulfite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sulfite.jpg; sourceTree = "<group>"; };
+		92F81D6119717FFC00E88C8A /* Wheat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wheat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +187,22 @@
 		92F81C94197108E100E88C8A = {
 			isa = PBXGroup;
 			children = (
+				92F81D4419714D0400E88C8A /* camera.png */,
+				92F81D5419717FFC00E88C8A /* Cereal.jpg */,
+				92F81D5519717FFC00E88C8A /* Corn.jpg */,
+				92F81D5619717FFC00E88C8A /* Egg.jpg */,
+				92F81D5719717FFC00E88C8A /* Fish.jpg */,
+				92F81D5819717FFC00E88C8A /* Gluten.jpg */,
+				92F81D5919717FFC00E88C8A /* Lactose.jpg */,
+				92F81D5A19717FFC00E88C8A /* Milk.jpg */,
+				92F81D5B19717FFC00E88C8A /* Peanut.jpg */,
+				92F81D5C19717FFC00E88C8A /* Sesame Seed.jpg */,
+				92F81D5D19717FFC00E88C8A /* Shellfish.jpg */,
+				92F81D5E19717FFC00E88C8A /* Soybean.jpg */,
+				92F81D5F19717FFC00E88C8A /* Sulfite.jpg */,
+				92F81D6119717FFC00E88C8A /* Wheat.jpg */,
+				92F81D501971705100E88C8A /* Check.png */,
+				92F81D511971705100E88C8A /* Cross.png */,
 				92F81D1C197114FA00E88C8A /* ZBarSDK */,
 				92F81CA8197108E100E88C8A /* Allergy */,
 				92F81CC5197108E100E88C8A /* AllergyTests */,
@@ -195,8 +249,12 @@
 				92F81CB2197108E100E88C8A /* LHAppDelegate.m */,
 				92F81CD51971093E00E88C8A /* LHMainViewController.h */,
 				92F81CD61971093E00E88C8A /* LHMainViewController.m */,
+				92F81D4919715AF900E88C8A /* LHSetupViewController.h */,
+				92F81D4A19715AF900E88C8A /* LHSetupViewController.m */,
 				92F81CD819710BE300E88C8A /* LHScanViewController.h */,
 				92F81CD919710BE300E88C8A /* LHScanViewController.m */,
+				92F81D3F1971403000E88C8A /* LHTableViewController.h */,
+				92F81D401971403000E88C8A /* LHTableViewController.m */,
 				92F81CB7197108E100E88C8A /* Images.xcassets */,
 				92F81CB4197108E100E88C8A /* Allergy.xcdatamodeld */,
 				92F81CA9197108E100E88C8A /* Supporting Files */,
@@ -374,12 +432,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F81D6D19717FFC00E88C8A /* Sulfite.jpg in Resources */,
+				92F81D531971705100E88C8A /* Cross.png in Resources */,
+				92F81D6719717FFC00E88C8A /* Lactose.jpg in Resources */,
+				92F81D6219717FFC00E88C8A /* Cereal.jpg in Resources */,
+				92F81D6C19717FFC00E88C8A /* Soybean.jpg in Resources */,
+				92F81D6319717FFC00E88C8A /* Corn.jpg in Resources */,
+				92F81D6819717FFC00E88C8A /* Milk.jpg in Resources */,
+				92F81D6919717FFC00E88C8A /* Peanut.jpg in Resources */,
 				92F81D3D197114FA00E88C8A /* zbar-helpicons.png in Resources */,
+				92F81D4519714D0400E88C8A /* camera.png in Resources */,
+				92F81D6519717FFC00E88C8A /* Fish.jpg in Resources */,
+				92F81D6F19717FFC00E88C8A /* Wheat.jpg in Resources */,
 				92F81CAD197108E100E88C8A /* InfoPlist.strings in Resources */,
 				92F81D3B197114FA00E88C8A /* zbar-back.png in Resources */,
 				92F81D3C197114FA00E88C8A /* zbar-help.html in Resources */,
 				92F81D3E197114FA00E88C8A /* zbar-samples.png in Resources */,
+				92F81D6619717FFC00E88C8A /* Gluten.jpg in Resources */,
+				92F81D6419717FFC00E88C8A /* Egg.jpg in Resources */,
+				92F81D6A19717FFC00E88C8A /* Sesame Seed.jpg in Resources */,
 				92F81CB8197108E100E88C8A /* Images.xcassets in Resources */,
+				92F81D521971705100E88C8A /* Check.png in Resources */,
+				92F81D6B19717FFC00E88C8A /* Shellfish.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +475,9 @@
 				92F81CB3197108E100E88C8A /* LHAppDelegate.m in Sources */,
 				92F81CD71971093E00E88C8A /* LHMainViewController.m in Sources */,
 				92F81CAF197108E100E88C8A /* main.m in Sources */,
+				92F81D411971403000E88C8A /* LHTableViewController.m in Sources */,
 				92F81CDA19710BE300E88C8A /* LHScanViewController.m in Sources */,
+				92F81D4B19715AF900E88C8A /* LHSetupViewController.m in Sources */,
 				92F81CB6197108E100E88C8A /* Allergy.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

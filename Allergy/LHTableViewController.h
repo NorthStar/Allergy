@@ -1,0 +1,17 @@
+//
+//  LHTableViewController.h
+//  Allergy
+//
+//  Created by Xinlei Xu on 7/12/14.
+//  Copyright (c) 2014 LinkedIn Hackday. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface LHTableViewController : UITableViewController
+
+@property (nonatomic, retain) NSArray *userAllergen;
+
+//- (NSInteger)numberOfUsers;
+
+@end

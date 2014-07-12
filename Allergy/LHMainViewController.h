@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "LHScanViewController.h"
+#import "LHTableViewController.h"
+#import "LHSetupViewController.h"
 
 @interface LHMainViewController : UITabBarController
 
+@property (nonatomic) BOOL hasSetUp;
+@property (nonatomic, strong) NSArray *userAllergen;
 @end
