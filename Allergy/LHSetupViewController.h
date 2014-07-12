@@ -12,4 +12,5 @@
 @property (nonatomic, strong) NSMutableArray *photoTitles;
 @property (nonatomic, strong) UIImageView *photo;
 @property (nonatomic, strong) NSNumber *done;
+@property (nonatomic, strong) NSString *updateAllergen;
 @end

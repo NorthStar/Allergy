@@ -19,6 +19,12 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+        CGRect tbFrame = [self.tableView frame];
+        tbFrame.size.height = 100;
+        [self.tableView setFrame:tbFrame];
+        
+        self.sadArray = @[@"Cereal", @"Corn", @"Egg", @"Fish", @"Gluten", @"Lactose", @"Milk", @"Peanut", @"Sesame Seed", @"Shellfish", @"Soybean", @"Sulfite", @"Tree Nut", @"Wheat"];
     }
     return self;
 }
@@ -26,10 +32,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    CGRect tbFrame = [self.tableView frame];
-    tbFrame.size.height = 100;
-    
-    [self.tableView setFrame:tbFrame];
     
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
@@ -78,17 +80,21 @@
     }
     // Configure the cell.
     cell.textLabel.text = [self.userAllergen objectAtIndex:indexPath.row];
+    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", cell.textLabel.text]];
+    cell.imageView.image = [[UIImageView alloc] initWithImage:image].image;
+    [cell setTintColor:[UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:1.0]];
+
     return cell;
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 80;

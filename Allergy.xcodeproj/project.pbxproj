@@ -45,17 +45,34 @@
 		92F81D531971705100E88C8A /* Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D511971705100E88C8A /* Cross.png */; };
 		92F81D6219717FFC00E88C8A /* Cereal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5419717FFC00E88C8A /* Cereal.jpg */; };
 		92F81D6319717FFC00E88C8A /* Corn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5519717FFC00E88C8A /* Corn.jpg */; };
-		92F81D6419717FFC00E88C8A /* Egg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5619717FFC00E88C8A /* Egg.jpg */; };
 		92F81D6519717FFC00E88C8A /* Fish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5719717FFC00E88C8A /* Fish.jpg */; };
 		92F81D6619717FFC00E88C8A /* Gluten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5819717FFC00E88C8A /* Gluten.jpg */; };
 		92F81D6719717FFC00E88C8A /* Lactose.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5919717FFC00E88C8A /* Lactose.jpg */; };
 		92F81D6819717FFC00E88C8A /* Milk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5A19717FFC00E88C8A /* Milk.jpg */; };
 		92F81D6919717FFC00E88C8A /* Peanut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5B19717FFC00E88C8A /* Peanut.jpg */; };
 		92F81D6A19717FFC00E88C8A /* Sesame Seed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5C19717FFC00E88C8A /* Sesame Seed.jpg */; };
-		92F81D6B19717FFC00E88C8A /* Shellfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5D19717FFC00E88C8A /* Shellfish.jpg */; };
 		92F81D6C19717FFC00E88C8A /* Soybean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5E19717FFC00E88C8A /* Soybean.jpg */; };
 		92F81D6D19717FFC00E88C8A /* Sulfite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D5F19717FFC00E88C8A /* Sulfite.jpg */; };
 		92F81D6F19717FFC00E88C8A /* Wheat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D6119717FFC00E88C8A /* Wheat.jpg */; };
+		92F81D711971846000E88C8A /* Tree Nut.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D701971846000E88C8A /* Tree Nut.jpg */; };
+		92F81D781971859B00E88C8A /* Eggs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D761971859B00E88C8A /* Eggs.jpg */; };
+		92F81D791971859B00E88C8A /* Shellfishs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D771971859B00E88C8A /* Shellfishs.jpg */; };
+		92F81D7B1971890400E88C8A /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D7A1971890400E88C8A /* list.png */; };
+		92F81D8C19718AF000E88C8A /* Cereal.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D7E19718AF000E88C8A /* Cereal.png */; };
+		92F81D8D19718AF000E88C8A /* Corn.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D7F19718AF000E88C8A /* Corn.png */; };
+		92F81D8E19718AF000E88C8A /* Egg.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8019718AF000E88C8A /* Egg.png */; };
+		92F81D8F19718AF000E88C8A /* Fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8119718AF000E88C8A /* Fish.png */; };
+		92F81D9019718AF000E88C8A /* Gluten.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8219718AF000E88C8A /* Gluten.png */; };
+		92F81D9119718AF000E88C8A /* Lactose.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8319718AF000E88C8A /* Lactose.png */; };
+		92F81D9219718AF000E88C8A /* Milk.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8419718AF000E88C8A /* Milk.png */; };
+		92F81D9319718AF000E88C8A /* Peanut.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8519718AF000E88C8A /* Peanut.png */; };
+		92F81D9419718AF000E88C8A /* Sesame Seed.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8619718AF000E88C8A /* Sesame Seed.png */; };
+		92F81D9519718AF000E88C8A /* Shellfish.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8719718AF000E88C8A /* Shellfish.png */; };
+		92F81D9619718AF000E88C8A /* Soybean.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8819718AF000E88C8A /* Soybean.png */; };
+		92F81D9719718AF000E88C8A /* Sulfite.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8919718AF000E88C8A /* Sulfite.png */; };
+		92F81D9819718AF000E88C8A /* Tree Nut.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8A19718AF000E88C8A /* Tree Nut.png */; };
+		92F81D9919718AF000E88C8A /* Wheat.png in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D8B19718AF000E88C8A /* Wheat.png */; };
+		92F81D9B1971967100E88C8A /* Allergy-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F81D9A1971967000E88C8A /* Allergy-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +91,6 @@
 		92F81CA2197108E100E88C8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		92F81CA4197108E100E88C8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92F81CA6197108E100E88C8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		92F81CAA197108E100E88C8A /* Allergy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Allergy-Info.plist"; sourceTree = "<group>"; };
 		92F81CAC197108E100E88C8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		92F81CAE197108E100E88C8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92F81CB0197108E100E88C8A /* Allergy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Allergy-Prefix.pch"; sourceTree = "<group>"; };
@@ -135,17 +151,34 @@
 		92F81D511971705100E88C8A /* Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross.png; sourceTree = "<group>"; };
 		92F81D5419717FFC00E88C8A /* Cereal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cereal.jpg; sourceTree = "<group>"; };
 		92F81D5519717FFC00E88C8A /* Corn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Corn.jpg; sourceTree = "<group>"; };
-		92F81D5619717FFC00E88C8A /* Egg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Egg.jpg; sourceTree = "<group>"; };
 		92F81D5719717FFC00E88C8A /* Fish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Fish.jpg; sourceTree = "<group>"; };
 		92F81D5819717FFC00E88C8A /* Gluten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gluten.jpg; sourceTree = "<group>"; };
 		92F81D5919717FFC00E88C8A /* Lactose.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lactose.jpg; sourceTree = "<group>"; };
 		92F81D5A19717FFC00E88C8A /* Milk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Milk.jpg; sourceTree = "<group>"; };
 		92F81D5B19717FFC00E88C8A /* Peanut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Peanut.jpg; sourceTree = "<group>"; };
 		92F81D5C19717FFC00E88C8A /* Sesame Seed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sesame Seed.jpg"; sourceTree = "<group>"; };
-		92F81D5D19717FFC00E88C8A /* Shellfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shellfish.jpg; sourceTree = "<group>"; };
 		92F81D5E19717FFC00E88C8A /* Soybean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soybean.jpg; sourceTree = "<group>"; };
 		92F81D5F19717FFC00E88C8A /* Sulfite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sulfite.jpg; sourceTree = "<group>"; };
 		92F81D6119717FFC00E88C8A /* Wheat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Wheat.jpg; sourceTree = "<group>"; };
+		92F81D701971846000E88C8A /* Tree Nut.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tree Nut.jpg"; sourceTree = "<group>"; };
+		92F81D761971859B00E88C8A /* Eggs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Eggs.jpg; sourceTree = "<group>"; };
+		92F81D771971859B00E88C8A /* Shellfishs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Shellfishs.jpg; sourceTree = "<group>"; };
+		92F81D7A1971890400E88C8A /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		92F81D7E19718AF000E88C8A /* Cereal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cereal.png; sourceTree = "<group>"; };
+		92F81D7F19718AF000E88C8A /* Corn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Corn.png; sourceTree = "<group>"; };
+		92F81D8019718AF000E88C8A /* Egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Egg.png; sourceTree = "<group>"; };
+		92F81D8119718AF000E88C8A /* Fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fish.png; sourceTree = "<group>"; };
+		92F81D8219718AF000E88C8A /* Gluten.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gluten.png; sourceTree = "<group>"; };
+		92F81D8319718AF000E88C8A /* Lactose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lactose.png; sourceTree = "<group>"; };
+		92F81D8419718AF000E88C8A /* Milk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milk.png; sourceTree = "<group>"; };
+		92F81D8519718AF000E88C8A /* Peanut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peanut.png; sourceTree = "<group>"; };
+		92F81D8619718AF000E88C8A /* Sesame Seed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sesame Seed.png"; sourceTree = "<group>"; };
+		92F81D8719718AF000E88C8A /* Shellfish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shellfish.png; sourceTree = "<group>"; };
+		92F81D8819718AF000E88C8A /* Soybean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Soybean.png; sourceTree = "<group>"; };
+		92F81D8919718AF000E88C8A /* Sulfite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sulfite.png; sourceTree = "<group>"; };
+		92F81D8A19718AF000E88C8A /* Tree Nut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tree Nut.png"; sourceTree = "<group>"; };
+		92F81D8B19718AF000E88C8A /* Wheat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wheat.png; sourceTree = "<group>"; };
+		92F81D9A1971967000E88C8A /* Allergy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Allergy-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,16 +221,32 @@
 			isa = PBXGroup;
 			children = (
 				92F81D4419714D0400E88C8A /* camera.png */,
+				92F81D7A1971890400E88C8A /* list.png */,
 				92F81D5419717FFC00E88C8A /* Cereal.jpg */,
+				92F81D7E19718AF000E88C8A /* Cereal.png */,
+				92F81D7F19718AF000E88C8A /* Corn.png */,
+				92F81D8019718AF000E88C8A /* Egg.png */,
+				92F81D8119718AF000E88C8A /* Fish.png */,
+				92F81D8219718AF000E88C8A /* Gluten.png */,
+				92F81D8319718AF000E88C8A /* Lactose.png */,
+				92F81D8419718AF000E88C8A /* Milk.png */,
+				92F81D8519718AF000E88C8A /* Peanut.png */,
+				92F81D8619718AF000E88C8A /* Sesame Seed.png */,
+				92F81D8719718AF000E88C8A /* Shellfish.png */,
+				92F81D8819718AF000E88C8A /* Soybean.png */,
+				92F81D8919718AF000E88C8A /* Sulfite.png */,
+				92F81D8A19718AF000E88C8A /* Tree Nut.png */,
+				92F81D8B19718AF000E88C8A /* Wheat.png */,
+				92F81D761971859B00E88C8A /* Eggs.jpg */,
+				92F81D771971859B00E88C8A /* Shellfishs.jpg */,
 				92F81D5519717FFC00E88C8A /* Corn.jpg */,
-				92F81D5619717FFC00E88C8A /* Egg.jpg */,
 				92F81D5719717FFC00E88C8A /* Fish.jpg */,
 				92F81D5819717FFC00E88C8A /* Gluten.jpg */,
+				92F81D701971846000E88C8A /* Tree Nut.jpg */,
 				92F81D5919717FFC00E88C8A /* Lactose.jpg */,
 				92F81D5A19717FFC00E88C8A /* Milk.jpg */,
 				92F81D5B19717FFC00E88C8A /* Peanut.jpg */,
 				92F81D5C19717FFC00E88C8A /* Sesame Seed.jpg */,
-				92F81D5D19717FFC00E88C8A /* Shellfish.jpg */,
 				92F81D5E19717FFC00E88C8A /* Soybean.jpg */,
 				92F81D5F19717FFC00E88C8A /* Sulfite.jpg */,
 				92F81D6119717FFC00E88C8A /* Wheat.jpg */,
@@ -246,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				92F81CB1197108E100E88C8A /* LHAppDelegate.h */,
+				92F81D9A1971967000E88C8A /* Allergy-Info.plist */,
 				92F81CB2197108E100E88C8A /* LHAppDelegate.m */,
 				92F81CD51971093E00E88C8A /* LHMainViewController.h */,
 				92F81CD61971093E00E88C8A /* LHMainViewController.m */,
@@ -265,7 +315,6 @@
 		92F81CA9197108E100E88C8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				92F81CAA197108E100E88C8A /* Allergy-Info.plist */,
 				92F81CAB197108E100E88C8A /* InfoPlist.strings */,
 				92F81CAE197108E100E88C8A /* main.m */,
 				92F81CB0197108E100E88C8A /* Allergy-Prefix.pch */,
@@ -432,28 +481,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F81D8D19718AF000E88C8A /* Corn.png in Resources */,
 				92F81D6D19717FFC00E88C8A /* Sulfite.jpg in Resources */,
+				92F81D8C19718AF000E88C8A /* Cereal.png in Resources */,
 				92F81D531971705100E88C8A /* Cross.png in Resources */,
+				92F81D711971846000E88C8A /* Tree Nut.jpg in Resources */,
 				92F81D6719717FFC00E88C8A /* Lactose.jpg in Resources */,
+				92F81D9919718AF000E88C8A /* Wheat.png in Resources */,
+				92F81D9819718AF000E88C8A /* Tree Nut.png in Resources */,
 				92F81D6219717FFC00E88C8A /* Cereal.jpg in Resources */,
 				92F81D6C19717FFC00E88C8A /* Soybean.jpg in Resources */,
+				92F81D9219718AF000E88C8A /* Milk.png in Resources */,
 				92F81D6319717FFC00E88C8A /* Corn.jpg in Resources */,
+				92F81D9119718AF000E88C8A /* Lactose.png in Resources */,
 				92F81D6819717FFC00E88C8A /* Milk.jpg in Resources */,
+				92F81D9019718AF000E88C8A /* Gluten.png in Resources */,
 				92F81D6919717FFC00E88C8A /* Peanut.jpg in Resources */,
+				92F81D9719718AF000E88C8A /* Sulfite.png in Resources */,
+				92F81D9319718AF000E88C8A /* Peanut.png in Resources */,
+				92F81D9519718AF000E88C8A /* Shellfish.png in Resources */,
+				92F81D9419718AF000E88C8A /* Sesame Seed.png in Resources */,
 				92F81D3D197114FA00E88C8A /* zbar-helpicons.png in Resources */,
+				92F81D8F19718AF000E88C8A /* Fish.png in Resources */,
+				92F81D9619718AF000E88C8A /* Soybean.png in Resources */,
 				92F81D4519714D0400E88C8A /* camera.png in Resources */,
 				92F81D6519717FFC00E88C8A /* Fish.jpg in Resources */,
 				92F81D6F19717FFC00E88C8A /* Wheat.jpg in Resources */,
 				92F81CAD197108E100E88C8A /* InfoPlist.strings in Resources */,
+				92F81D9B1971967100E88C8A /* Allergy-Info.plist in Resources */,
+				92F81D8E19718AF000E88C8A /* Egg.png in Resources */,
+				92F81D791971859B00E88C8A /* Shellfishs.jpg in Resources */,
 				92F81D3B197114FA00E88C8A /* zbar-back.png in Resources */,
+				92F81D781971859B00E88C8A /* Eggs.jpg in Resources */,
 				92F81D3C197114FA00E88C8A /* zbar-help.html in Resources */,
 				92F81D3E197114FA00E88C8A /* zbar-samples.png in Resources */,
 				92F81D6619717FFC00E88C8A /* Gluten.jpg in Resources */,
-				92F81D6419717FFC00E88C8A /* Egg.jpg in Resources */,
 				92F81D6A19717FFC00E88C8A /* Sesame Seed.jpg in Resources */,
 				92F81CB8197108E100E88C8A /* Images.xcassets in Resources */,
 				92F81D521971705100E88C8A /* Check.png in Resources */,
-				92F81D6B19717FFC00E88C8A /* Shellfish.jpg in Resources */,
+				92F81D7B1971890400E88C8A /* list.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

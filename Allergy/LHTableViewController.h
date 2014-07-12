@@ -11,7 +11,7 @@
 @interface LHTableViewController : UITableViewController
 
 @property (nonatomic, retain) NSArray *userAllergen;
-
+@property (nonatomic, retain) NSArray *sadArray;
 //- (NSInteger)numberOfUsers;
 
 @end

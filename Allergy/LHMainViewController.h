@@ -14,5 +14,6 @@
 @interface LHMainViewController : UITabBarController
 
 @property (nonatomic) BOOL hasSetUp;
-@property (nonatomic, strong) NSArray *userAllergen;
+@property (nonatomic, strong) NSMutableArray *userAllergen;
+@property (nonatomic, strong) LHSetupViewController *setupViewController;
 @end
