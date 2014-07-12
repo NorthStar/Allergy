@@ -70,11 +70,13 @@
 }
 - (void)onCheck
 {
+    [self.checkButton setEnabled:NO];
+    [self.crossButton setEnabled:NO];
+    
     if ([self.photoTitles count] == 0) {
         return;
     }
-    [self.checkButton setEnabled:NO];
-    [self.crossButton setEnabled:NO];
+    
     //save to some data base
     self.updateAllergen = [self.photoTitles firstObject];
     [self.photoTitles removeObjectAtIndex:0];
@@ -106,12 +108,9 @@
 }
 - (void)onCross
 {
-    if ([self.photoTitles count] == 0) {
-        return;
-    }
     [self.checkButton setEnabled:NO];
     [self.crossButton setEnabled:NO];
-    self.updateAllergen = [self.photoTitles firstObject];
+
     [self.photoTitles removeObjectAtIndex:0];
     
     if ([self.photoTitles count] == 0) {
@@ -124,13 +123,11 @@
     [self.photo removeFromSuperview];
     
     NSString *photoTitle = [self.photoTitles firstObject];
-//    self.photo = [[UIImageView alloc] initWithFrame:self.view.bounds];
     [self.photo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", photoTitle]]];
     if (!self.photo.image) {
         [self.photo setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@s.jpg", photoTitle]]];
     }
     
-    [self.photoTitles removeObjectAtIndex:0];
     [self.view addSubview:self.photo];
     [self.tabBarItem setTitle:photoTitle];
     

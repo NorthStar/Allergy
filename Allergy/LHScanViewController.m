@@ -14,7 +14,6 @@
 @end
 
 @implementation LHScanViewController
-@synthesize resultText;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,15 +31,21 @@
     // Do any additional setup after loading the view.
     //\TODO: If the user has no allergen, we remind them to set some (cuz otherwise nothing will happen)
     CGRect bounds = [self.view bounds];
-    self.resultText = [[UITextView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y + 90, 400, 120)];
+    self.results = [[UIImageView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y + 90, 250, 250)];
     self.scanButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    [self.scanButton setFrame:CGRectMake(bounds.origin.x + 40, bounds.origin.y + 40, 240, 40)];
-    [self.scanButton setTitle:@"SCAN" forState:UIControlStateNormal];
+    [self.scanButton setFrame:CGRectMake(bounds.origin.x + 40, bounds.origin.y + 30, 300, 130)];
+    [self.scanButton setTitleColor: [UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:0.5] forState:UIControlStateNormal];
+    [self.scanButton setTitle:@"Preparing to scan... " forState:UIControlStateNormal];
     [self.scanButton addTarget:self action:@selector(onScanButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:self.resultText];
+    [self.view addSubview:self.results];
     [self.view addSubview:self.scanButton];
+    
+    [self onScanButtonTapped];
+    
 }
+
+
 - (void) onScanButtonTapped
 {
     NSLog(@"TBD: scan barcode here...");
@@ -52,17 +57,19 @@
    [reader.scanner setSymbology: ZBAR_UPCA config: ZBAR_CFG_MAX_LEN to: 12];
     // present
     [self presentViewController: reader animated: YES completion:nil];
+    
+    [self.scanButton setTitle:@"RESCAN" forState:UIControlStateNormal];
 }
 
 - (void) dealloc
 {
 //    self.resultImage = nil;
-    self.resultText = nil;
+    self.results = nil;
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) interfaceOrientation
 {
-    return(YES);
+    return(NO);
 }
 
 - (void)didReceiveMemoryWarning
@@ -93,9 +100,7 @@
 //    resultText.text = symbol.data;
     self.barcode = [symbol.data substringFromIndex:1];
     //[self.scanButton setTitle:[NSString stringWithFormat:@"Barcode is %@", self.barcode]forState:UIControlStateNormal];
-    [self.resultText setText:self.barcode];
-    
-    
+    [self.scanButton setTitle:[NSString stringWithFormat:@"Barcode fetched was %@", self.barcode] forState:UIControlStateNormal];
     
     //process barcode
     NSString *requestString = [NSString stringWithFormat:@"http://api.foodessentials.com/label?u=%@&sid=9f5fb3b2-365c-403a-9c7f-0146aa9ecdce&appid=tk6dj6qqzmeuw25gafbqk4as&f=json&long=38.6300&lat=90.2000&api_key=tk6dj6qqzmeuw25gafbqk4as", self.barcode];
@@ -125,16 +130,39 @@
                                    
                                        if ([self.usersAllergen containsObject: allergenName]) {
                                            
-                                           [self.resultText setText:@"NOT OKAY TO EAT"];
+                                           [self.results setImage:[UIImage imageNamed:@"Cross.png"]];
                                            
                                            isOkay = NO;
+                                           [UIView animateWithDuration:5.0f // This can be changed.
+                                                            animations:^{
+                                                                CGRect frame = self.results.frame;
+                                                                frame.size.width += 200.0f;
+                                                                frame.size.height += 200.0f;
+                                                                frame.origin.y += 100.0f;
+                                                                // This is just for the width, but you can change the origin and the height as well.
+                                                                self.results.frame = frame;
+                                                            } 
+                                                            completion:^(BOOL finished){
+                                                            }];
                                            [reader dismissViewControllerAnimated: YES completion:nil];
                                        }
                                        [allergens addObject:allergenName];
                                    }
                                }
                                if (isOkay) {
-                                   [self.resultText setText:@"OKAY TO EAT"];
+                                   //[self.resultText setText:@"OKAY TO EAT"];
+                                   [self.results setImage:[UIImage imageNamed:@"Check.png"]];
+                                   [UIView animateWithDuration:5.0f // This can be changed.
+                                                    animations:^{
+                                                        CGRect frame = self.results.frame;
+                                                        frame.size.width += 200.0f;
+                                                        frame.size.height += 200.0f;
+                                                        frame.origin.y += 100.0f;
+                                                        // This is just for the width, but you can change the origin and the height as well.
+                                                        self.results.frame = frame;
+                                                    }
+                                                    completion:^(BOOL finished){
+                                                    }];
                                }
 
                            }];

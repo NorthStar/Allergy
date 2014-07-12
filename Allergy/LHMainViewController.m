@@ -47,10 +47,7 @@ static void *allergenAddedContext = &allergenAddedContext;
         [self.setupViewController addObserver:self forKeyPath:@"updateAllergen" options:NSKeyValueObservingOptionNew context:allergenAddedContext];
 
         
-        [self setViewControllers:@[self.setupViewController]];
-        
-
-        
+        [self setViewControllers:@[self.setupViewController]]; 
     }
 }
 
@@ -80,7 +77,7 @@ static void *allergenAddedContext = &allergenAddedContext;
         [cameraViewController.tabBarItem setImage:[UIImage imageNamed:@"camera.png"]];
         [cameraViewController.tabBarItem setTitle:@"CAMERA"];
         
-        LHTableViewController *listViewController = [[LHTableViewController alloc]init];
+        LHTableViewController *listViewController = [[LHTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
         [listViewController.tabBarItem setTitle:@"LIST"];
         [listViewController.tabBarItem setImage:[UIImage imageNamed:@"list.png"]];
         

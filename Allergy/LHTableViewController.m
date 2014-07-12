@@ -19,11 +19,6 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
-        self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-        CGRect tbFrame = [self.tableView frame];
-        tbFrame.size.height = 100;
-        [self.tableView setFrame:tbFrame];
-        
         self.sadArray = @[@"Cereal", @"Corn", @"Egg", @"Fish", @"Gluten", @"Lactose", @"Milk", @"Peanut", @"Sesame Seed", @"Shellfish", @"Soybean", @"Sulfite", @"Tree Nut", @"Wheat"];
     }
     return self;
@@ -32,7 +27,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+  /*
+    CGRect insetBounds = CGRectInset(self.view.bounds, 40, 40);
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(insetBounds.origin.x, insetBounds.origin.y, insetBounds.size.width, 25)];
+    [title setText:@"Your Allergens"];
+    [title setFont:[UIFont fontWithName:@"HelveticaNeueLight" size:30]];
+    [title setTextAlignment:NSTextAlignmentRight];
+    [self.view addSubview:title];
+    insetBounds = UIEdgeInsetsInsetRect(insetBounds, UIEdgeInsetsMake(40 ,0 , 85, 0));
+    [self.tableView setFrame: insetBounds];*/
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
     
@@ -65,7 +68,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.userAllergen count];
+    return [self.sadArray count];
 }
 
 
@@ -78,12 +81,29 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+    
     // Configure the cell.
-    cell.textLabel.text = [self.userAllergen objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.sadArray objectAtIndex:indexPath.row];//[self.userAllergen objectAtIndex:indexPath.row];
     UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", cell.textLabel.text]];
     cell.imageView.image = [[UIImageView alloc] initWithImage:image].image;
-    [cell setTintColor:[UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:1.0]];
-
+    
+    CGRect bounds = cell.backgroundView.bounds;
+    
+    if (cell.imageView.image) {
+        UISwitch *aSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(bounds.origin.x + 240, bounds.origin.y + bounds.size.height + 20, 40, 20)];
+        //add validation
+        if ([self.userAllergen containsObject: cell.textLabel.text]) {
+            [aSwitch setOn:YES animated:YES];
+        } else {
+            [aSwitch setOn:NO animated:YES];
+        }
+        [aSwitch setThumbTintColor:[UIColor whiteColor]];
+        //[aSwitch setOnTintColor: [UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:0.5]];
+        [aSwitch setTintColor:[UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:0.9]];
+        
+       // [aSwitch addTarget:self action:@selector([tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade]) forControlEvents:UIControlEventValueChanged];
+        [cell addSubview:aSwitch];
+    }
     return cell;
 }
 
@@ -104,6 +124,8 @@
 {
     return 10;
 }
+
+/*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -113,8 +135,8 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
-}
-
+}*/
+/*
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     NSString *sectionName;
@@ -132,7 +154,7 @@
             break;
     }
     return sectionName;
-}
+}*/
 /*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath

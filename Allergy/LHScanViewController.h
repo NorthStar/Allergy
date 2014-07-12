@@ -13,7 +13,7 @@
     UITextView *resultText;
 }
 // NSURLConnectionDownloadDelegate
-@property (nonatomic, retain) UITextView *resultText;
+@property (nonatomic, retain) UIImageView *results;
 @property (nonatomic, strong) NSString *barcode;
 @property (nonatomic, strong) UIButton *scanButton;
 
