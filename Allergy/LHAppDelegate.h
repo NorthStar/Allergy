@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LHMainViewController.h"
+#import "ZBarSDK.h"
 
 @interface LHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic)LHMainViewController *mainVC;
+
+
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
