@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92F81CA1197108E100E88C8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA0197108E100E88C8A /* Foundation.framework */; };
+		92F81CA3197108E100E88C8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA2197108E100E88C8A /* CoreGraphics.framework */; };
+		92F81CA5197108E100E88C8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA4197108E100E88C8A /* UIKit.framework */; };
+		92F81CA7197108E100E88C8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA6197108E100E88C8A /* CoreData.framework */; };
+		92F81CAD197108E100E88C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92F81CAB197108E100E88C8A /* InfoPlist.strings */; };
+		92F81CAF197108E100E88C8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F81CAE197108E100E88C8A /* main.m */; };
+		92F81CB3197108E100E88C8A /* LHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F81CB2197108E100E88C8A /* LHAppDelegate.m */; };
+		92F81CB6197108E100E88C8A /* Allergy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92F81CB4197108E100E88C8A /* Allergy.xcdatamodeld */; };
+		92F81CB8197108E100E88C8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F81CB7197108E100E88C8A /* Images.xcassets */; };
+		92F81CBF197108E100E88C8A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CBE197108E100E88C8A /* XCTest.framework */; };
+		92F81CC0197108E100E88C8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA0197108E100E88C8A /* Foundation.framework */; };
+		92F81CC1197108E100E88C8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA4197108E100E88C8A /* UIKit.framework */; };
+		92F81CC2197108E100E88C8A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F81CA6197108E100E88C8A /* CoreData.framework */; };
+		92F81CCA197108E100E88C8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92F81CC8197108E100E88C8A /* InfoPlist.strings */; };
+		92F81CCC197108E100E88C8A /* AllergyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F81CCB197108E100E88C8A /* AllergyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92F81CC3197108E100E88C8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F81C95197108E100E88C8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F81C9C197108E100E88C8A;
+			remoteInfo = Allergy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92F81C9D197108E100E88C8A /* Allergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Allergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F81CA0197108E100E88C8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		92F81CA2197108E100E88C8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		92F81CA4197108E100E88C8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		92F81CA6197108E100E88C8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		92F81CAA197108E100E88C8A /* Allergy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Allergy-Info.plist"; sourceTree = "<group>"; };
+		92F81CAC197108E100E88C8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92F81CAE197108E100E88C8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92F81CB0197108E100E88C8A /* Allergy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Allergy-Prefix.pch"; sourceTree = "<group>"; };
+		92F81CB1197108E100E88C8A /* LHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHAppDelegate.h; sourceTree = "<group>"; };
+		92F81CB2197108E100E88C8A /* LHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHAppDelegate.m; sourceTree = "<group>"; };
+		92F81CB5197108E100E88C8A /* Allergy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Allergy.xcdatamodel; sourceTree = "<group>"; };
+		92F81CB7197108E100E88C8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		92F81CBD197108E100E88C8A /* AllergyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllergyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F81CBE197108E100E88C8A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		92F81CC7197108E100E88C8A /* AllergyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AllergyTests-Info.plist"; sourceTree = "<group>"; };
+		92F81CC9197108E100E88C8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92F81CCB197108E100E88C8A /* AllergyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllergyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92F81C9A197108E100E88C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F81CA3197108E100E88C8A /* CoreGraphics.framework in Frameworks */,
+				92F81CA7197108E100E88C8A /* CoreData.framework in Frameworks */,
+				92F81CA5197108E100E88C8A /* UIKit.framework in Frameworks */,
+				92F81CA1197108E100E88C8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F81CBA197108E100E88C8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F81CBF197108E100E88C8A /* XCTest.framework in Frameworks */,
+				92F81CC2197108E100E88C8A /* CoreData.framework in Frameworks */,
+				92F81CC1197108E100E88C8A /* UIKit.framework in Frameworks */,
+				92F81CC0197108E100E88C8A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92F81C94197108E100E88C8A = {
+			isa = PBXGroup;
+			children = (
+				92F81CA8197108E100E88C8A /* Allergy */,
+				92F81CC5197108E100E88C8A /* AllergyTests */,
+				92F81C9F197108E100E88C8A /* Frameworks */,
+				92F81C9E197108E100E88C8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92F81C9E197108E100E88C8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92F81C9D197108E100E88C8A /* Allergy.app */,
+				92F81CBD197108E100E88C8A /* AllergyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92F81C9F197108E100E88C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92F81CA0197108E100E88C8A /* Foundation.framework */,
+				92F81CA2197108E100E88C8A /* CoreGraphics.framework */,
+				92F81CA4197108E100E88C8A /* UIKit.framework */,
+				92F81CA6197108E100E88C8A /* CoreData.framework */,
+				92F81CBE197108E100E88C8A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92F81CA8197108E100E88C8A /* Allergy */ = {
+			isa = PBXGroup;
+			children = (
+				92F81CB1197108E100E88C8A /* LHAppDelegate.h */,
+				92F81CB2197108E100E88C8A /* LHAppDelegate.m */,
+				92F81CB7197108E100E88C8A /* Images.xcassets */,
+				92F81CB4197108E100E88C8A /* Allergy.xcdatamodeld */,
+				92F81CA9197108E100E88C8A /* Supporting Files */,
+			);
+			path = Allergy;
+			sourceTree = "<group>";
+		};
+		92F81CA9197108E100E88C8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92F81CAA197108E100E88C8A /* Allergy-Info.plist */,
+				92F81CAB197108E100E88C8A /* InfoPlist.strings */,
+				92F81CAE197108E100E88C8A /* main.m */,
+				92F81CB0197108E100E88C8A /* Allergy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92F81CC5197108E100E88C8A /* AllergyTests */ = {
+			isa = PBXGroup;
+			children = (
+				92F81CCB197108E100E88C8A /* AllergyTests.m */,
+				92F81CC6197108E100E88C8A /* Supporting Files */,
+			);
+			path = AllergyTests;
+			sourceTree = "<group>";
+		};
+		92F81CC6197108E100E88C8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92F81CC7197108E100E88C8A /* AllergyTests-Info.plist */,
+				92F81CC8197108E100E88C8A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92F81C9C197108E100E88C8A /* Allergy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F81CCF197108E100E88C8A /* Build configuration list for PBXNativeTarget "Allergy" */;
+			buildPhases = (
+				92F81C99197108E100E88C8A /* Sources */,
+				92F81C9A197108E100E88C8A /* Frameworks */,
+				92F81C9B197108E100E88C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Allergy;
+			productName = Allergy;
+			productReference = 92F81C9D197108E100E88C8A /* Allergy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F81CBC197108E100E88C8A /* AllergyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F81CD2197108E100E88C8A /* Build configuration list for PBXNativeTarget "AllergyTests" */;
+			buildPhases = (
+				92F81CB9197108E100E88C8A /* Sources */,
+				92F81CBA197108E100E88C8A /* Frameworks */,
+				92F81CBB197108E100E88C8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92F81CC4197108E100E88C8A /* PBXTargetDependency */,
+			);
+			name = AllergyTests;
+			productName = AllergyTests;
+			productReference = 92F81CBD197108E100E88C8A /* AllergyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92F81C95197108E100E88C8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "LinkedIn Hackday";
+				TargetAttributes = {
+					92F81CBC197108E100E88C8A = {
+						TestTargetID = 92F81C9C197108E100E88C8A;
+					};
+				};
+			};
+			buildConfigurationList = 92F81C98197108E100E88C8A /* Build configuration list for PBXProject "Allergy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92F81C94197108E100E88C8A;
+			productRefGroup = 92F81C9E197108E100E88C8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92F81C9C197108E100E88C8A /* Allergy */,
+				92F81CBC197108E100E88C8A /* AllergyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92F81C9B197108E100E88C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F81CAD197108E100E88C8A /* InfoPlist.strings in Resources */,
+				92F81CB8197108E100E88C8A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F81CBB197108E100E88C8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F81CCA197108E100E88C8A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92F81C99197108E100E88C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F81CB3197108E100E88C8A /* LHAppDelegate.m in Sources */,
+				92F81CAF197108E100E88C8A /* main.m in Sources */,
+				92F81CB6197108E100E88C8A /* Allergy.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F81CB9197108E100E88C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F81CCC197108E100E88C8A /* AllergyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92F81CC4197108E100E88C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F81C9C197108E100E88C8A /* Allergy */;
+			targetProxy = 92F81CC3197108E100E88C8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92F81CAB197108E100E88C8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F81CAC197108E100E88C8A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		92F81CC8197108E100E88C8A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92F81CC9197108E100E88C8A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92F81CCD197108E100E88C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		92F81CCE197108E100E88C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92F81CD0197108E100E88C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Allergy/Allergy-Prefix.pch";
+				INFOPLIST_FILE = "Allergy/Allergy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		92F81CD1197108E100E88C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Allergy/Allergy-Prefix.pch";
+				INFOPLIST_FILE = "Allergy/Allergy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		92F81CD3197108E100E88C8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Allergy.app/Allergy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Allergy/Allergy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AllergyTests/AllergyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		92F81CD4197108E100E88C8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Allergy.app/Allergy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Allergy/Allergy-Prefix.pch";
+				INFOPLIST_FILE = "AllergyTests/AllergyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92F81C98197108E100E88C8A /* Build configuration list for PBXProject "Allergy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F81CCD197108E100E88C8A /* Debug */,
+				92F81CCE197108E100E88C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F81CCF197108E100E88C8A /* Build configuration list for PBXNativeTarget "Allergy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F81CD0197108E100E88C8A /* Debug */,
+				92F81CD1197108E100E88C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		92F81CD2197108E100E88C8A /* Build configuration list for PBXNativeTarget "AllergyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F81CD3197108E100E88C8A /* Debug */,
+				92F81CD4197108E100E88C8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92F81CB4197108E100E88C8A /* Allergy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92F81CB5197108E100E88C8A /* Allergy.xcdatamodel */,
+			);
+			currentVersion = 92F81CB5197108E100E88C8A /* Allergy.xcdatamodel */;
+			path = Allergy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 92F81C95197108E100E88C8A /* Project object */;
+}
