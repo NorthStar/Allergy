@@ -13,5 +13,7 @@
 @property (nonatomic, retain) NSArray *userAllergen;
 @property (nonatomic, retain) NSArray *sadArray;
 //- (NSInteger)numberOfUsers;
+@property (nonatomic, strong) NSString *currentAdd;
+@property (nonatomic, strong) NSString *currentDelete;
 
 @end

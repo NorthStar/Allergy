@@ -150,7 +150,6 @@
                                    }
                                }
                                if (isOkay) {
-                                   //[self.resultText setText:@"OKAY TO EAT"];
                                    [self.results setImage:[UIImage imageNamed:@"Check.png"]];
                                    [UIView animateWithDuration:5.0f // This can be changed.
                                                     animations:^{
@@ -168,7 +167,14 @@
                            }];
     [reader dismissViewControllerAnimated: YES completion:nil];
 }
-
+/*    __weak LHScanViewController *weakSelf = self;
+ ^{
+ weakSelf.results = [[UIImageView alloc] initWithFrame:CGRectMake(bounds.origin.x, bounds.origin.y + 90, 250, 250)];
+ [weakSelf.scanButton setFrame:CGRectMake(bounds.origin.x + 40, bounds.origin.y + 30, 300, 130)];
+ [weakSelf.scanButton setTitle:@"Rescan" forState:UIControlStateNormal];
+ 
+ 
+ CGRect bounds = self.view.bounds;*/
 - (void)rescan
 {
     return;

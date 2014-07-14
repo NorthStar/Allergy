@@ -88,26 +88,32 @@
     cell.imageView.image = [[UIImageView alloc] initWithImage:image].image;
     
     CGRect bounds = cell.backgroundView.bounds;
-    
+    UISwitch *aSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(bounds.origin.x + 240, bounds.origin.y + bounds.size.height + 20, 40, 20)];
+    [aSwitch setOn:NO animated:YES];
     if (cell.imageView.image) {
-        UISwitch *aSwitch = [[UISwitch alloc]initWithFrame:CGRectMake(bounds.origin.x + 240, bounds.origin.y + bounds.size.height + 20, 40, 20)];
         //add validation
         if ([self.userAllergen containsObject: cell.textLabel.text]) {
             [aSwitch setOn:YES animated:YES];
-        } else {
-            [aSwitch setOn:NO animated:YES];
         }
         [aSwitch setThumbTintColor:[UIColor whiteColor]];
-        //[aSwitch setOnTintColor: [UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:0.5]];
+        [aSwitch setOnTintColor: [UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:0.5]];
         [aSwitch setTintColor:[UIColor colorWithRed:230.0/255.0 green:140.0/255.0 blue:235.0/255.0 alpha:0.9]];
-        
+        aSwitch.tag = indexPath.row;
        // [aSwitch addTarget:self action:@selector([tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade]) forControlEvents:UIControlEventValueChanged];
+     //   [aSwitch addObserver:self forKeyPath:@"on" options:NSKeyValueObservingOptionNew context: nil];
+        //[aSwitch addTarget:self action:@selector(addCurrent) forControlEvents:UIControlEventValueChanged];
         [cell addSubview:aSwitch];
     }
     return cell;
 }
-
-
+/*
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([object isKindOfClass:[UISwitch class]) {
+        NSUInteger *tag = object.tag;
+        self.userAllergen
+    self.userAllergen addObject:
+}*/
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
