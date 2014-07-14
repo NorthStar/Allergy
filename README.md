@@ -20,4 +20,8 @@ Do not run it in the simulator or the app will crash. This is due to using the c
 Notes
 ========
 
-The app key for the Label API is exposed, because... hackathon.
+The app key for the Label API is exposed, because... hackathon. That free account will expire in 30 days.
+
+Screenshots
+==========
+http://imgur.com/a/YoQjG
