@@ -2,7 +2,7 @@ Allergy
 =======
 
 This is an iOS app created by team 'Food Scan' during LinkedIn HackDay on July 11, 2014, authored by Mimee. 
-Rachel Friedman @rlfriedm has an Android version.
+Rachel Friedman ([@rlfriedm]("https://github.com/rlfriedm")) has an Android version.
 
 Working app with workflow:
 At first opening, check or not check some pictures one by one regarding whether one allergen is concerning.
